@@ -7,6 +7,8 @@
     --color-primary: #366cab;
     --color-secondary: #b6cce7;
     --color-accent: #3c6090;
+
+    --display-width: 1400px;
 }
 
 .layered{
@@ -57,10 +59,10 @@ small {font-size: 0.750rem; /* 12px */}
 /*------------------------------------------------------------------------------------------Header--------------------------------------------------------------------------------------------*/
 header {
     top: 0;
-    margin: auto;
-    width: 1040px;
+    width: var(--display-width);
     height: 100px;
     flex-shrink: 0;
+    margin: auto;
 }
 
 header > .rect{
@@ -70,7 +72,7 @@ header > .rect{
     align-items: center;
     flex-direction: row-reverse;
     top: 0;
-    width: 1040px;
+    width: 100%;
     height: 100px;
     flex-shrink: 0;
     border-bottom: black solid 1px;
@@ -182,7 +184,7 @@ header > .rect > .left-cont{
 
     font-size: 25px;
 
-    border-right: var(--color-secondary) solid 1px;
+    border-right: var(--color-secondary) solid 2px;
 }
 
 .middle-cont > .date{
@@ -237,20 +239,55 @@ header > .rect > .left-cont{
     margin-left: 10px;
 }
 
+header > .rect > .right-cont{
+    grid-column: 3;
+} 
 
+.right-cont > button{
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    width: 125px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 10px;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right-cont > button:last-child{
+    color: white;
+    background-color: var(--color-accent);
+}
+
+.right-cont > button{
+    cursor: pointer;
+}
 
 /*-------------------------------------------------------------------------------------------Main-----------------------------------------------------------------------------------------*/
 
 main {
-    margin-top: 20px;
+    display: flex;
+    width: var(--display-width);
+    justify-content: center;
+    margin: auto;
 }
 
 .news-list {
+    display: flex;
 
+    flex-direction: column;
 }
 
 .newsitem {
     position: relative;
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 30px;
+    margin: 20px 0;
 }
 
 .newsitem > a {
@@ -273,7 +310,7 @@ main {
 }
 
 .newsitem-cover {
-
+    width: 60%;
 }
 
 .newsitem-title {
