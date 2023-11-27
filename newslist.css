@@ -1,0 +1,90 @@
+main {
+    display: flex;
+    flex-direction: row;
+    width: var(--display-width);
+    justify-content: left;
+    margin: auto;
+    margin-top: 2px;
+    background-color: var(--color-background-main);
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    border-right: 1px solid var(--color-secondary);
+}
+
+.news-local {
+    display: flex;
+    height: 500px;
+    object-fit: contain;
+    width: calc(100% - calc(1000px + 15px));
+    position: sticky;
+    top: 0;
+    z-index: 199999;
+    flex-direction: row;
+}
+
+.newsitem {
+    width: 950px;
+    position: relative;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+.newsitem:before {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 950px;
+    z-index: 100;
+    height: 2px;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.newsitem > a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+/* Banner newsitem */
+.newsitem-large {
+}
+
+/* Average size newsitem */
+.newsitem-medium {
+}
+
+/* Compact newsitem */
+.newsitem-small {
+}
+
+.newsitem-cover {
+    width: 750px;
+    object-fit: cover;
+}
+
+.newsitem-title {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 200%;
+}
+
+.newsitem:hover .newsitem-title {
+    text-decoration: underline;
+}
+
+.newsitem-paragraph {
+}
+
+.newsitem-date {
+    position: absolute;
+    padding: 8px;
+    right: 0;
+    bottom: 0;
+}
