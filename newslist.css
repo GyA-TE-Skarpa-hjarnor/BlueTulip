@@ -10,6 +10,7 @@ main {
 .news-list {
     width: 950px;
     padding-top: 20px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,10 +35,9 @@ main {
     position: relative;
     margin: 8px 20px;
     border-radius: 3px;
-    height: 500px;
-    max-height: 50vw;
+    min-height: fit-content;
+    padding-bottom: 20px;
     overflow: hidden;
-    border-top: 2px solid var(--color-secondary);
     box-shadow: 0px 2px 5px #0001;
 }
 
@@ -52,7 +52,7 @@ main {
 
 .newsitem-cover {
     width: 100%;
-    height: 60%;
+    height: 300px;
     border-radius: 1.5px;
     object-fit: cover;
 }
@@ -71,7 +71,8 @@ main {
 }
 
 .newsitem-paragraph {
-    margin: 0 20px .6rem;
+    margin: 0 20px;
+    padding-bottom: 20px;
 }
 
 .newsitem-date {
