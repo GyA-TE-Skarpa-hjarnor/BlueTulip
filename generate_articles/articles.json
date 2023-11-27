@@ -95,7 +95,7 @@
     ]
   },
   "uddevalla-gymnasieskola-deltar-i-nationell-programmeringstavling": {
-    "title": "Uddevalla Gymnasieskola deltar i nationell programmeringstävling: Eleverna siktar mot framgång i Programmeringsolympiaden",
+    "title": "Eleverna siktar mot framgång i Programmeringsolympiaden",
     "cover_src": "programmering.jpg",
     "cover_alt": "Kod på datorskärm",
     "author": "Tina Fredriksson",
@@ -124,6 +124,33 @@
       "\"Vi har haft besökare från när och fjärran som är nyfikna på vårt 'utomjordiska landmärke',\" berättade en lokal affärsägare. \"Det har verkligen gett staden en oväntad touch!\"",
       "Stadens borgmästare ser det hela med glimten i ögat och säger: \"Detta har verkligen gett oss ett unikt samtalsämne och kanske drar till sig en annan typ av turister till vår lilla stad!\"",
       "Även om det hela började som ett skämt ser det ut att ha blivit en växande och oväntad attraktion för staden, med invånarna som nu delar på skratt och fantasifulla idéer om liv bortom vår planet."
+    ]
+  },
+  "ny-klimatvagg-invigs-i-goteborg": {
+    "title": "Ny \"Klimatvägg\" invigs i Göteborg",
+    "cover_src": "goteborg.jpg",
+    "cover_alt": "Göteborg centrum",
+    "author": "Tim Backelund",
+    "time_iso": "2022-04-18T18:32:45.361829",
+    "body": [
+      "I Göteborg har en imponerande \"Klimatvägg\" officiellt invigts som en del av stadens initiativ för att öka medvetenheten om klimatförändringarna och uppmuntra till hållbara handlingar bland invånarna.",
+      "Denna klimatvägg, belägen på en framträdande plats i stadens centrum, visar inte bara fakta om klimatförändringarna utan också konkreta tips och enkla åtgärder som invånarna kan vidta för att minska sin miljöpåverkan. Från att minska plastanvändningen till att välja kollektivtrafik eller cykla istället för att köra bil, erbjuder väggen praktiska råd för att främja ett mer hållbart vardagsliv.",
+      "\"Det är en påminnelse om att även små handlingar kan göra en stor skillnad för vår planet,\" sa en talesperson för Göteborgs stad. \"Vi hoppas att detta inspirerar invånarna att göra små förändringar som tillsammans kan ha en positiv effekt på miljön.\"",
+      "Invigningen av klimatväggen har lockat intresse från både lokalbefolkningen och turister. Många har uttryckt entusiasm över att se staden ta steg mot att öka medvetenheten om klimatfrågor och göra hållbara val mer tillgängliga för alla.",
+      "\"Det är fantastiskt att se staden ta initiativ för att väcka medvetenhet om klimatet,\" sa en besökare. \"Det är viktigt att vi alla gör vårt för att bidra till en bättre framtid.\"",
+      "Klimatväggen är en del av Göteborgs satsning på att främja hållbarhet och öka medvetenheten om klimatfrågor. Staden arbetar aktivt för att skapa fler liknande initiativ för att involvera och inspirera invånarna till att agera för en mer hållbar framtid."
+    ]
+  },
+  "en-man-har-ramlat-i-floden-i-lego-city": {
+    "title": "En man har ramlat i floden i Lego City",
+    "cover_src": "legocity.png",
+    "cover_alt": "En man i floden i Lego city",
+    "author": "Ella från Lego City",
+    "time_iso": "2020-05-03T18:43:48.815939",
+    "body": [
+      "En man har ramlat i floden i Lego City! Lyckligtvis var räddningstjänsten på plats och byggde den nya räddningshelikoptern.",
+      "Räddningstjänsten agerade raskt när de byggde och startade den nya räddningshelikoptern. De förberedde livlinan, sänkte baåren och gjorde räddningen.",
+      "Vad tur att räddningstjänsten hade den nya Räddningskollektionen från Lego City."
     ]
   }
 }

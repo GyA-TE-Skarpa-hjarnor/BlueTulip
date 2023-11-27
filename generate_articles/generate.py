@@ -7,7 +7,9 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from bs4.formatter import HTMLFormatter
 
-with open('generate_articles/articles.json', 'r', encoding='utf-8') as f:
+os.chdir(Path(__file__).parent)
+
+with open('articles.json', 'r', encoding='utf-8') as f:
     articles = json.load(f)
 
 if not os.path.isdir('output'):
@@ -15,7 +17,7 @@ if not os.path.isdir('output'):
 
 for article_name, data in articles.items():
     print('Generating ' + article_name)
-    with open('generate_articles/template.html', 'r', encoding='utf-8') as f:
+    with open('template.html', 'r', encoding='utf-8') as f:
         template = f.read()
 
     if 'time_iso' in data:
@@ -35,5 +37,5 @@ for article_name, data in articles.items():
         f.write(str(article.prettify(encoding='utf-8', formatter=HTMLFormatter(indent=4)), encoding='utf-8'))
     if 'cover_src' in data:
         cover_src = data['cover_src']
-        shutil.copyfile(f'generate_articles/images/{cover_src}', folder.joinpath(cover_src))
+        shutil.copyfile(f'images/{cover_src}', folder.joinpath(cover_src))
 
