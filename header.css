@@ -5,6 +5,7 @@ header {
     flex-shrink: 0;
     margin: auto;
     background-color: var(--color-background-main);
+    border-bottom: 3px solid var(--color-secondary)
 }
 
 header > .rect {
