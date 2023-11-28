@@ -69,6 +69,7 @@ header > .rect > .left-cont {
     grid-area: 1 / 1 / 3 / 3;
     width: 100%;
     height: 100%;
+    margin-left: -10px;
 }
 
 .wh-place,
@@ -80,13 +81,14 @@ header > .rect > .left-cont {
     justify-content: start;
     padding-left: 10px;
     margin: 0;
+    margin-left: -15px;
 }
 
 .wh-text {
     grid-area: 1 / 3 / 2 / 6;
 
     color: #000;
-    font-family: Inter;
+    font-family: "Poppins";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -97,7 +99,7 @@ header > .rect > .left-cont {
     grid-area: 2 / 3 / 3 / 6;
 
     color: #000;
-    font-family: Inter;
+    font-family: "Poppins";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -115,6 +117,8 @@ header > .rect > .left-cont {
     margin: 0;
 
     font-size: 25px;
+    font-family: "Poppins";
+
 }
 
 .wh > .deg-sign {
@@ -129,6 +133,7 @@ header > .rect > .left-cont {
     height: 100%;
 
     font-size: 25px;
+    font-family: "Poppins";
 
     border-right: var(--color-secondary) solid 2px;
 }
@@ -151,11 +156,11 @@ header > .rect > .left-cont {
     height: 100%;
 }
 
-.date > .layered {
-    grid-area: 1 / 2 / 3 / 3;
+.date > .rows {
+    grid-area: 1 / 1 / 2 / 2;
 }
 
-.date > .layered > * {
+.date > .rows > * {
     margin: 0;
     padding: 0;
 
@@ -164,10 +169,9 @@ header > .rect > .left-cont {
 
 .date > .year {
     display: flex;
-    grid-area: 1 / 3 / 3 / 4;
-    font-size: 13px;
-    margin-left: -10px;
-    justify-content: left;
+    grid-area: 1 / 2 / 3 / 4;
+    font-size: 15px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -214,4 +218,5 @@ header > .rect > .right-cont {
 
 .right-cont > button {
     cursor: pointer;
+    color: white;
 }

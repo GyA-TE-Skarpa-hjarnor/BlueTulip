@@ -8,7 +8,7 @@ main {
 }
 
 .news-list {
-    width: 950px;
+    width: 80%;
     padding-top: 20px;
     padding-bottom: 30px;
     display: flex;
@@ -19,16 +19,26 @@ main {
     
     border-right: 2px solid var(--color-secondary);
 }
-
-.news-local {
+.cnews-local {
     display: flex;
+    width: 20%;
     height: 500px;
-    object-fit: contain;
     width: calc(100% - calc(1000px + 15px));
     position: sticky;
     top: 0;
     z-index: 199999;
     flex-direction: row;
+    justify-content: center;
+}
+.cnews-local > .cnews-title{
+    display: flex;
+    height: fit-content;
+    font-size: 3rem;
+    color: var(--color-accent);
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    font-weight: 500;
 }
 
 .newsitem {
