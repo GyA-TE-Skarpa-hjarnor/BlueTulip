@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="newslist.css">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+    <script defer src="search.js"></script>
 </head>
 <body>
     <header>
@@ -42,7 +44,14 @@
                     <img src="./svgs/🦆 icon _time 4_.svg" alt="clock">
                     <p class="time">14:22</p>
 
-                </div>  
+                </div>
+
+                <div class="search">
+                    <input type="text" id="search-bar" placeholder="Sök...">
+                    <ul id="search-results" aria-label="Sökresultat">
+
+                    </ul>
+                </div>
             </div>
 
             <div class="right-cont">
