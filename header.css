@@ -154,6 +154,64 @@ header > .rect > .right-cont {
     grid-column: 3;
 } 
 
+/* Search */
+#search-bar {
+    height: fit-content;
+    padding: .5em;
+    margin: 2rem 1rem 0;
+    background: var(--color-search-bar);
+    border-radius: 2px;
+}
+
+.search {
+    z-index: 5;
+}
+
+#search-results {
+    padding-left: 0;
+    margin-top: 1rem;
+    list-style: none;
+    background: var(--color-background-main);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.result-item {
+    overflow: hidden;
+    height: 5rem;
+    width: 25rem;
+}
+
+.result-item > a {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-items: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.result-item > a:hover,
+.result-item > a:focus {
+    opacity: 0.5;
+}
+
+.result-cover {
+    height: 100%;
+    width: 6rem;
+    object-fit: cover;
+}
+
+.result-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 2;
+    margin: 0.2rem 0.5rem 0.6rem;
+    color: var(--color-text);
+}
+
 /* Right header */
 .right-cont > button {
     background-color: var(--color-primary);
