@@ -58,7 +58,7 @@ header > .rect > .left-cont {
     margin-top: 30px;
     margin-left: 10px;
     display: grid;
-    grid-template-columns: repeat(9, 20px);
+    grid-template-columns: repeat(2, 20px) 110px repeat(4, 20px);
     grid-template-rows: repeat(2, 20px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -85,7 +85,7 @@ header > .rect > .left-cont {
 }
 
 .wh-text {
-    grid-area: 1 / 3 / 2 / 6;
+    grid-area: 1 / 3 / 2 / 4;
 
     color: #000;
     font-family: "Poppins";
@@ -96,11 +96,11 @@ header > .rect > .left-cont {
 }
 
 .wh-place {
-    grid-area: 2 / 3 / 3 / 6;
+    grid-area: 2 / 3 / 3 / 4;
 
     color: #000;
     font-family: "Poppins";
-    font-size: 14px;
+    font-size: 22.5px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -109,11 +109,11 @@ header > .rect > .left-cont {
 .deg {
     display: flex;
     justify-content: right;
-    align-items: center;
+    align-items: flex-end;
 
-    grid-area: 1 / 6 / 3 / 8;
+    grid-area: 1 / 4 / 3 / 6;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     margin: 0;
 
     font-size: 25px;
@@ -122,7 +122,7 @@ header > .rect > .left-cont {
 }
 
 .wh > .deg-sign {
-    grid-area: 1 / 8 / 3 / 10;
+    grid-area: 1 / 6 / 3 / 8; 
     display: flex;
     justify-content: left;
     align-items: center;
@@ -139,54 +139,15 @@ header > .rect > .left-cont {
 }
 
 .middle-cont > .date {
-    margin-top: 30px;
-    margin-left: 15px;
     grid-column: 2;
-
-    display: grid;
-    grid-template-columns: 40px 60px repeat(3, 40px) 20px;
-    grid-template-rows: repeat(2, 20px);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.date > img:first-child {
-    grid-area: 1 / 1 / 3 / 2;
-    width: 100%;
-    height: 100%;
-}
-
-.date > .rows {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.date > .rows > * {
-    margin: 0;
-    padding: 0;
-
-    font-size: 60%;
-}
-
-.date > .year {
-    display: flex;
-    grid-area: 1 / 2 / 3 / 4;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-}
-
-.date > img:nth-last-of-type(1) {
-    grid-area: 1 / 4 / 3 / 5;
-    height: 100%;
-    width: 100%;
-}
-
-.date > .time {
-    grid-area: 1 / 5 / 3 / 6;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+}
+.date > time{
+    height: fit-content;
+    width: fit-content;
 }
 
 header > .rect > .right-cont {

@@ -53,7 +53,7 @@ main {
 
 .newsitem {
     position: relative;
-    margin: 8px 20px;
+    margin: -10px 20px;
     border-radius: 3px;
     min-height: fit-content;
     padding-bottom: 20px;
