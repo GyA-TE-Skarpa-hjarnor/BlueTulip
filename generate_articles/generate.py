@@ -9,7 +9,7 @@ from bs4.formatter import HTMLFormatter
 import locale
 
 os.chdir(Path(__file__).parent)
-locale.setlocale(locale.LC_ALL, 'se')
+locale.setlocale(locale.LC_ALL, 'sv-SE')
 
 with open('articles.json', 'r', encoding='utf-8') as f:
     articles = json.load(f)
