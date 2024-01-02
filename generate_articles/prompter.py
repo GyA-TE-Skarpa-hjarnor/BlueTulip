@@ -8,7 +8,7 @@ def keyify(s: str):
     s = s.replace('å', 'a').replace('ä', 'a').replace('ö', 'o')
     return re.sub('[^a-z0-9-]', '', s)
 
-def generate_date(start_date: dt = dt.now()-timedelta(days=3*365), end_date: dt = dt.now()-timedelta(days=1)):
+def generate_date(start_date: dt = dt.now()-timedelta(days=365), end_date: dt = dt.now()-timedelta(days=1)):
     random_days = random.randint(0, (end_date - start_date).days)
     random_date = start_date + timedelta(days = random_days)
     return random_date

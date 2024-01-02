@@ -6,8 +6,10 @@ from datetime import datetime as dt
 from pathlib import Path
 from bs4 import BeautifulSoup
 from bs4.formatter import HTMLFormatter
+import locale
 
 os.chdir(Path(__file__).parent)
+locale.setlocale(locale.LC_ALL, 'se')
 
 with open('articles.json', 'r', encoding='utf-8') as f:
     articles = json.load(f)
@@ -15,13 +17,20 @@ with open('articles.json', 'r', encoding='utf-8') as f:
 if not os.path.isdir('output'):
     os.mkdir('output')
 
+def formatDt(date):
+    s = date.strftime(r'%A %d %b %Y kl %H:%M')
+    for i, match in enumerate(re.finditer(r'(?<=\b)[a-z]', s)):
+        if i >= 2: break
+        s = s[:match.start()] + s[match.start()].upper() + s[match.start()+1:]
+    return s
+
 for article_name, data in articles.items():
     print('Generating ' + article_name)
     with open('template.html', 'r', encoding='utf-8') as f:
         template = f.read()
 
     if 'time_iso' in data:
-        data['time'] = dt.fromisoformat(data['time_iso']).strftime(r'%d/%m/%Y %H:%M')
+        data['time'] = formatDt(dt.fromisoformat(data['time_iso']))
     if 'body' in data:
         data['body'] = '\n'.join([f'<p>{text}</p>' for text in data['body']])
 
