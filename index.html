@@ -14,28 +14,14 @@
 <body>
     <header>
         <div class="rect">
-
             <div class="left-cont">
                 <h1 class="logotext">BluePaper</h1>
             </div>
-            
             <div class="middle-cont">
-
-                <div class="wh">
-
-                    <img src="./svgs/🦆 icon _day sunny_.svg" alt="sunny whether" class="wh-icon">
-                    <p class="wh-text">Väder</p>
-                    <p class="wh-place">Uddevalla</p>
-
-                    <p class="deg">10</p>
-                    <p class="deg-sign">°C</p>
-                </div>
-                
                 <div class="date">
                     <time datetime="today">2023-12-14</time>
                 </div>  
             </div>
-
             <div class="right-cont">
                 <button type="button">Login</button>
                 <button type="button">Get Premium</button>
@@ -56,16 +42,50 @@
             <article data-article="bestallning-av-latte-och-kattunge-resulterade-i-ovantad-leverans" class="newsitem"></article>
             <article data-article="en-man-har-ramlat-i-floden-i-lego-city" class="newsitem"></article>
         </ul>
-        <ul class="cnews">
-            <h1 class="cnews-title">Aktuellt</h1>
-        </ul>
+
+        <aside>
+            <div class="sticky">
+                <h3 class="forecast-title">Vädret</h3>
+                <p class="forecast-place">Stockholm</p>
+
+                <!--Forecast items-->
+                <div class="forecast-container">
+                    <p class="forecast-date">I dag</p>
+                    <div class="forecast-info">
+                        <time datetime="2024-01-02T15:00+0100">kl. 12 - 18</time>
+                        <div><img src="./svgs/icon_snow.svg" alt="icon_snow"></div>
+                        <span>-6°</span>
+                    </div>
+                    <dl class="forecast-grid">
+                        <dt>Nederbörd</dt>
+                        <dd>0.6 mm</dd>
+                        <dt>Vind</dt>
+                        <dd>4.4 m/s</dd>
+                        <dt>Luftfuktighet</dt>
+                        <dd>78%</dd>
+                    </dl>
+                </div>
+                <div class="forecast-container">
+                    <p class="forecast-date">I morgon</p>
+                    <div class="forecast-info">
+                        <time datetime="2024-01-02T15:00+0100">kl. 12 - 18</time>
+                        <div><img src="./svgs/icon_snow.svg" alt="icon_snow"></div>
+                        <span>-6°</span>
+                    </div>
+                    <dl class="forecast-grid">
+                        <dt>Nederbörd</dt>
+                        <dd>1.6 mm</dd>
+                        <dt>Vind</dt>
+                        <dd>6.0 m/s</dd>
+                        <dt>Luftfuktighet</dt>
+                        <dd>69%</dd>
+                    </dl>
+                </div>
+            </div>
+        </aside>
+
     </main>
+
     <script src="articles.js"></script>
-    <aside>
-
-    </aside>
-    <footer>
-
-    </footer>
 </body>
 </html>
