@@ -34,14 +34,8 @@ header > .rect > .left-cont {
     flex-shrink: 0;
 }
 
-.rect > .left-cont > .logotext {
-    color: var(--color-primary);
-    text-align: center;
-    font-family: Noto Serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
+.rect > .left-cont > .logo {
+    height: 70px;
 }
 
 /* Header center */
