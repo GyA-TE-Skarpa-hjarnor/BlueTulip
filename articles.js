@@ -1,3 +1,4 @@
+const locale = 'sv-SE'
 const newsitems = document.querySelectorAll('article.newsitem[data-article]')
 
 Array.from(newsitems).forEach(item => {
@@ -50,7 +51,7 @@ Array.from(newsitems).forEach(item => {
             
             const time = document.createElement('time')
             time.innerHTML = formatDate(sourceData.date)
-            time.dateTime = sourceData.date.toISOString()
+            time.dateTime = sourceData.date.toLocaleString(locale)
             time.className = 'newsitem-date'
             
             const a = document.createElement('a')
@@ -63,16 +64,22 @@ Array.from(newsitems).forEach(item => {
         })
 })
 
-function formatDate(date) {
-    if (date == 'Invalid Date') return 'Invalid Date'
-
-    if (date.getFullYear() === new Date().getFullYear()) {
-        return `${pad(date.getDate())}/${pad(date.getMonth()+1)} ${pad(date.getHours())}:${pad(date.getMinutes())}`
-    } else {
-        return `${pad(date.getDate())}/${pad(date.getMonth()+1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())}`
-    }
+String.prototype.capitalize = function() {
+    if (this.length == 0) return this
+    return this.charAt(0).toUpperCase() + this.substring(1)
 }
 
-function pad(x) {
-    return x.toString().padStart(2, '0')
+Number.prototype.padZeros = function(length = 2) {
+    return this.toString().padStart(length, '0')
+}
+
+function formatDate(date) {
+    console.log(date)
+    if (date == 'Invalid Date') return 'Invalid Date'
+    
+    if (date.getFullYear() === new Date().getFullYear()) {
+        return `${date.toLocaleDateString(locale, {weekday: 'long'}).capitalize()} ${date.getDate()} ${date.toLocaleDateString(locale, {month: 'short'}).capitalize()} kl ${date.getHours().padZeros()}:${date.getMinutes().padZeros()}`
+    } else {
+        return `${date.toLocaleDateString(locale, {weekday: 'long'}).capitalize()} ${date.getDate()} ${date.toLocaleDateString(locale, {month: 'short'}).capitalize()} ${date.getFullYear()} kl ${date.getHours().padZeros()}:${date.getMinutes().padZeros()}`
+    }
 }
