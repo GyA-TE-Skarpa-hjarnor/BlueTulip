@@ -10,25 +10,22 @@
     <link rel="stylesheet" href="newslist.css">
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
     <script defer src="search.js"></script>
+    <script defer src="live-info.js"></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="rect">
-            <div class="left-cont">
-                <img class="logo" src="/images/bluetulip.png" alt="Blue Tulip Nyheter logga">
-            </div>
-            <div class="middle-cont">
-                <div class="date">
-                    <time datetime="today">2023-12-14</time>
-                </div>  
-            </div>
-            <div class="right-cont">
-                <button type="button">Login</button>
-                <button type="button">Get Premium</button>
-            </div>
-            
+        <img class="logo" src="/images/bluetulip.png" alt="Blue Tulip Nyheter logga">
+        
+        <div class="search">
+            <input type="text" id="search-bar" placeholder="Sök...">
+            <ul id="search-results" aria-label="Sökresultat">
+
+            </ul>
         </div>
+
+        <button type="button">Login</button>
+        <button type="button">Get Premium</button>
     </header>
     <main class="news">
         <ul class="news-list">
