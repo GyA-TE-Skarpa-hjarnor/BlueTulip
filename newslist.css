@@ -10,7 +10,7 @@ main {
 }
 
 .news-list {
-    width: 80%;
+    width: 60%;
     padding-top: 20px;
     padding-bottom: 30px;
     display: flex;
@@ -23,9 +23,8 @@ main {
 }
 .cnews {
     display: flex;
-    width: 20%;
     height: 500px;
-    width: calc(100% - calc(1000px + 15px));
+    width: 40%;
     position: sticky;
     top: 0;
     z-index: 3;
@@ -34,8 +33,7 @@ main {
 }
 .cnews > .cnews-title{
     display: flex;
-    width: calc(100% - 9px);
-    height: 50px;
+    width: 100%;
     background-color: var(--color-accent);
     justify-content: center;
     height: fit-content;
@@ -51,9 +49,36 @@ main {
     box-shadow: 0px 2px 5px #0001;
 }
 
+.cnews > .small-container{
+    text-decoration: none;
+    display: flex;
+    max-width: 100vw;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-color: #e8e8e8;
+    border-width: 1px;
+    width: auto;
+    margin: 0 0 6px 0;
+    padding: 0 16px 0 16px;
+    flex-grow: 1;
+    border-style: solid;
+}
+.cnews img{
+    position: absolute;
+    min-width: 100%;
+    max-width: none;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 .newsitem {
     position: relative;
-    margin: -10px 20px;
+    margin: 0px 20px;
     border-radius: 3px;
     min-height: fit-content;
     padding-bottom: 20px;
@@ -72,7 +97,7 @@ main {
 
 .newsitem-cover {
     width: 100%;
-    height: 300px;
+    aspect-ratio: 2;
     border-radius: 1.5px;
     object-fit: cover;
 }

@@ -1,8 +1,6 @@
 header {
-    top: 0;
     width: var(--display-width);
     height: 100px;
-    flex-shrink: 0;
     margin: auto;
     background-color: var(--color-background-main);
     border-bottom: 3px solid var(--color-secondary)

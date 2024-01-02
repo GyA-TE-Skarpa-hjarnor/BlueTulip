@@ -3,14 +3,14 @@
 :root {
     /* Theme colors */
     --color-text: #050a0f;
-    --color-background:#b6cce7; 
+    --color-background:#c8d5e2; 
     --color-background-main: #fafcff;
     --color-primary: #366cab;
     --color-secondary: #b6cce7;
     --color-accent: #3c6090;
     --color-search-bar: #eaecef;
 
-    --display-width: 1270px;
+    --display-width: 1092.8px;
 }
 
 body::-webkit-scrollbar-track{
