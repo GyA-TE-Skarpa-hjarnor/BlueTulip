@@ -10,5 +10,5 @@ fetch(url)
     .then(json => {
         const namn = json.dagar[0].namnsdag
         console.log(namn)
-        namnsdag.innerHTML = `Namnsdag: ${namn.join(', ')}`
+        namnsdag.innerHTML = `Dagens namn: ${namn.join(', ')}`
     })

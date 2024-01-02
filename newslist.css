@@ -10,7 +10,7 @@ main {
 }
 
 .news-list {
-    width: 70%;
+    width: 75%;
     padding-top: 20px;
     padding-bottom: 30px;
     display: flex;
@@ -18,12 +18,13 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: left;
+    margin: 0 30px;
 }
 
-.newsitem {
+.newsitem {  
     position: relative;
-    margin: 5px 20px;
     border-radius: 3px;
+    margin: 5px 0;
     min-height: fit-content;
     padding-bottom: 20px;
     overflow: hidden;   
@@ -71,24 +72,49 @@ main {
     bottom: 0;
 }
 
-/*Forecast items on side*/
+/*Forecast, date and name items on side*/
 aside{
-    display: flex;
-    width: 40%;
+    margin-top: 12px;
+    position: relative;
+    display: inline-block;
+    width: 25%;
 }
 .sticky{
     display: flex;
     position: sticky;
+    bottom: 0;
     flex-direction: column;
-    width: 60%;
-    top: 0;
+    width: 90%;
 }
 
+.forecast-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+.forecast-top > .left{
+    flex-grow: 1;
+}
+.forecast-top > .right{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    align-items: flex-end;
+}
+
+.forecast-title{
+    font-family: "Noto Serif";
+}
 .forecast-container{
     display: inline-block;
     margin-top: 10px;
-    box-shadow: 0px 2px 5px #0001;
-    padding: 16px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+    padding: 16px 16px 2.5px;
+    border-radius: 3px;
 }
 .forecast-date{
     font-weight: 600;
@@ -99,9 +125,7 @@ aside{
     border-bottom: 1px solid var(--color-accent);
     flex-direction: row;
     text-align: center;
-
     font-family: "Poppins";
-
 }
 .forecast-info > time{
     display: inline;
@@ -124,13 +148,16 @@ aside{
 }
 
 .forecast-grid{
+    margin: 4px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .forecast-grid > dt{
+    padding-bottom: 2px;
     float: left;
 }
 .forecast-grid > dd{
+    padding-bottom: 2px;
     text-align: right;
     font-weight: 600;
 }
