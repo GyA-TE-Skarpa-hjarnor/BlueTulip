@@ -15,7 +15,7 @@ Array.from(newsitems).forEach(item => {
         .then(text => {
             return new Promise(resolve => {
                 const doc = new DOMParser().parseFromString(text, 'text/html')
-    
+
                 const titleEl = doc.getElementById('title')
                 const title = titleEl?.innerHTML
                 const cover = doc.getElementById('cover-image')
@@ -40,20 +40,20 @@ Array.from(newsitems).forEach(item => {
             cover.src = sourceData.coverSrc
             cover.alt = sourceData.coverAlt
             cover.className = 'newsitem-cover'
-            
+
             const title = document.createElement('h3')
             title.innerHTML = sourceData.title
             title.className = 'newsitem-title'
-            
+
             const paragraph = document.createElement('p')
             paragraph.innerHTML = sourceData.paragraph.substr(0, sourceData.paragraph.search(/(?<=\.)/))
             paragraph.className = 'newsitem-paragraph'
-            
+
             const time = document.createElement('time')
             time.innerHTML = formatDate(sourceData.date)
             time.dateTime = sourceData.date.toLocaleString(locale)
             time.className = 'newsitem-date'
-            
+
             const a = document.createElement('a')
             a.href = url
             a.appendChild(cover)
@@ -76,7 +76,7 @@ Number.prototype.padZeros = function(length = 2) {
 function formatDate(date) {
     console.log(date)
     if (date == 'Invalid Date') return 'Invalid Date'
-    
+
     if (date.getFullYear() === new Date().getFullYear()) {
         return `${date.toLocaleDateString(locale, {weekday: 'long'}).capitalize()} ${date.getDate()} ${date.toLocaleDateString(locale, {month: 'short'}).capitalize()} kl ${date.getHours().padZeros()}:${date.getMinutes().padZeros()}`
     } else {

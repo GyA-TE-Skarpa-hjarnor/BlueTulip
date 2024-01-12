@@ -37,7 +37,7 @@ for article_name, data in articles.items():
     for placeholder in reversed(list(re.finditer(r'\$(\w+)', template))):
         key = placeholder.group(1)
         template = template[:placeholder.start()] + (data[key] if key in data else '') + template[placeholder.end():]
-    
+
     article = BeautifulSoup(template, 'html.parser')
     folder = Path(f'output/{article_name}')
     if not folder.exists():

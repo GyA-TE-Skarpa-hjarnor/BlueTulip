@@ -1,11 +1,13 @@
 header {
+    height: 70px;
+    border-bottom: 3px solid var(--color-secondary);
+}
+
+.header {
     width: var(--display-width);
     height: 70px;
-    padding: 0 8px;
-    margin: auto;
-    background-color: var(--color-background-main);
-    border-bottom: 3px solid var(--color-secondary);
-    
+    margin-inline: auto;
+
     position: relative;
     display: grid;
     grid-template-columns: 240px 1fr 200px 200px;
@@ -14,8 +16,9 @@ header {
     align-items: center;
 }
 
+/* Logo */
 .logo {
-    height: 60px;
+    height: 55px;
     margin: auto;
 }
 
@@ -42,6 +45,24 @@ header button {
     line-height: normal;
 }
 
+/* Nav */
+nav {
+    display: flex;
+    justify-content: start;
+    column-gap: 20px;
+}
+
+nav > * {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+nav > *:hover {
+    filter: brightness(0.5);
+}
+
 /* Search */
 .search {
     align-self: start;
@@ -63,7 +84,7 @@ header button {
     padding-left: 0;
     margin-top: 0;
     list-style: none;
-    background: var(--color-background-main);
+    background: var(--color-background);
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
@@ -103,4 +124,11 @@ header button {
     line-clamp: 2;
     margin: 0.2rem 0.5rem 0.6rem;
     color: var(--color-text);
+}
+
+/* Footer */
+footer {
+    height: 400px;
+    overflow-x: hidden;
+    background-color: var(--color-primary);
 }

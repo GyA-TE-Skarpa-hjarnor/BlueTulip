@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Tulip Nyheter</title>
+    <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="newslist.css">
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
     <script defer src="search.js"></script>
     <script defer src="live-info.js"></script>
@@ -15,20 +15,22 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="/">
-            <img src="/images/bluetulip.png" alt="Blue Tulip Nyheter logga">
-        </a>
-        <nav>
-            <a href="/kontakt">Kontakt</a>
-            <a href="/om-oss">Om oss</a>
-        </nav>
-        <div class="search">
-            <input type="text" id="search-bar" placeholder="Sök...">
-            <ul id="search-results" aria-label="Sökresultat">
+        <div class="header">
+            <a class="logo" href="/">
+                <img src="/images/bluetulip.png" alt="Blue Tulip Nyheter logga">
+            </a>
+            <nav>
+                <span onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})">Kontakt</span>
+                <a href="/om-oss">Om oss</a>
+            </nav>
+            <div class="search">
+                <input type="text" id="search-bar" placeholder="Sök...">
+                <ul id="search-results" aria-label="Sökresultat">
 
-            </ul>
+                </ul>
+            </div>
+            <button type="button">Logga in</button>
         </div>
-        <button type="button">Logga in</button>
     </header>
     <main class="news">
         <ul class="news-list">
@@ -43,6 +45,7 @@
             <article data-article="ufo-sikte-leder-till-ovantad-skapelse-av-motesplats-for-utomjordingar" class="newsitem"></article>
             <article data-article="en-man-har-ramlat-i-floden-i-lego-city" class="newsitem"></article>
         </ul>
+        <script src="articles.js"></script>
 
         <aside>
             <div class="sticky">
@@ -54,7 +57,7 @@
                     <div class="right">
                         <time datetime="" id="today"></time>
                         <span id="namnsdag">Laddar namnsdag...</span>
-                    </div>    
+                    </div>
                 </div>
 
                 <!--Forecast items-->
@@ -125,12 +128,14 @@
                         <dd>70%</dd>
                     </dl>
                 </div>
-                
+
             </div>
         </aside>
 
     </main>
-
-    <script src="articles.js"></script>
+    <footer>
+        <span class="copyright">© BlueTulip AB 2024</span>
+        <span>Gustavsvägen 17, 456 78 Småköping</span>
+    </footer>
 </body>
 </html>
