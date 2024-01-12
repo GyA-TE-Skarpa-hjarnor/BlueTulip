@@ -79,6 +79,9 @@ nav > *:hover {
     border-radius: 2px;
     outline: none;
 }
+#search-bar::placeholder {
+    color: var(--color-search-bar-placeholder);
+}
 
 #search-results {
     width: 380px;
@@ -88,7 +91,7 @@ nav > *:hover {
     background: var(--color-background);
     border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+    box-shadow: var(--shadow);
 }
 
 .result-item {

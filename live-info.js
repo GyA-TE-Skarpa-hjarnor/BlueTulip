@@ -16,9 +16,12 @@ const url = 'https://sholiday.faboul.se/dagar/v2.1/'
 fetch(url)
     .then(res => res.json())
     .then(json => {
-        const namn = json.dagar[0].namnsdag
-        console.log(namn)
-        namnsdag.innerHTML = `Dagens namn: ${namn.join(', ')}`
+        const names = json.dagar[0].namnsdag
+        let nameString = names.join(', ')
+        if (nameString.length > 12) {
+            nameString = names[0]
+        }
+        namnsdag.innerHTML = `Dagens namn: ${nameString}`
     })
 
 Array.from(Array.from(document.getElementsByClassName('forecast-date')).entries()).forEach(([i, element]) => {

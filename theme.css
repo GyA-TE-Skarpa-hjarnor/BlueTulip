@@ -7,14 +7,18 @@
     --color-secondary: #b6cce7;
     --color-accent: #3c6090;
     --color-search-bar: #eaecef;
+    --color-search-bar-placeholder: #757575;
+    --shadow: 0px 2px 10px -1px rgba(0, 10, 30, 0.15);
 }
 :root[data-theme="dark"] {
     --color-text: #f0f5fa;
-    --color-background: #000205;
+    --color-background: #012;
     --color-primary: #548bc9;
     --color-secondary: #182e49;
     --color-accent: #6f93c3;
-    --color-search-bar: #333;
+    --color-search-bar: #20283a;
+    --color-search-bar-placeholder: #626570;
+    --shadow: 0px 2px 6px 2px rgba(5, 2, 0, 0.5);
 }
 :root{
     --display-width: 1400px;
@@ -76,7 +80,7 @@ body::-webkit-scrollbar{
 }
 body::-webkit-scrollbar-thumb{
     background-color: var(--color-primary);
-    border-radius: 2.59999999px;
+    border-radius: 1px;
 }
 
 /* Theme changer button */
