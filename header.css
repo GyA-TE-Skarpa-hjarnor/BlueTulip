@@ -70,6 +70,7 @@ nav > *:hover {
 }
 
 #search-bar {
+    color: var(--color-text);
     height: fit-content;
     width: 180px;
     margin-top: 20px;

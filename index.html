@@ -9,17 +9,20 @@
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="header.css">
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+    <script src="theme-picker.js"></script>
     <script defer src="search.js"></script>
     <script defer src="live-info.js"></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <button id="toggle-theme" tabindex="-1"></button>
     <header>
         <div class="header">
             <a class="logo" href="/">
                 <img src="/images/bluetulip.png" alt="Blue Tulip Nyheter logga">
             </a>
             <nav>
+                <a href="/">Nyheter</a>
                 <span onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})">Kontakt</span>
                 <a href="/om-oss">Om oss</a>
             </nav>

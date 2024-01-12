@@ -1,25 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@media (prefers-color-scheme: light) {
-    :root {
-        --color-text: #050a0f;
-        --color-background: #fafcff;
-        --color-primary: #366cab;
-        --color-secondary: #b6cce7;
-        --color-accent: #3c6090;
-    }
+:root[data-theme="light"] {
+    --color-text: #050a0f;
+    --color-background: #fafcff;
+    --color-primary: #366cab;
+    --color-secondary: #b6cce7;
+    --color-accent: #3c6090;
+    --color-search-bar: #eaecef;
 }
-@media (prefers-color-scheme: dark) {
-    :root{
-        --color-text: #f0f5fa;
-        --color-background: #000205;
-        --color-primary: #548bc9;
-        --color-secondary: #182e49;
-        --color-accent: #6f93c3;
-    }
+:root[data-theme="dark"] {
+    --color-text: #f0f5fa;
+    --color-background: #000205;
+    --color-primary: #548bc9;
+    --color-secondary: #182e49;
+    --color-accent: #6f93c3;
+    --color-search-bar: #333;
 }
 :root{
-    --color-search-bar: #eaecef;
     --display-width: 1400px;
 }
 
@@ -80,4 +77,14 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background-color: var(--color-primary);
     border-radius: 2.59999999px;
+}
+
+/* Theme changer button */
+#toggle-theme {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }
