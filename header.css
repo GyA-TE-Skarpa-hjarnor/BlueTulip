@@ -10,7 +10,7 @@ header {
 
     position: relative;
     display: grid;
-    grid-template-columns: 240px 1fr 200px 200px;
+    grid-template-columns: 200px 1fr 200px 150px;
     grid-template-rows: minmax(0, 1fr);
     justify-content: center;
     align-items: center;
@@ -19,30 +19,25 @@ header {
 /* Logo */
 .logo {
     height: 55px;
-    margin: auto;
+    margin: 2px;
 }
 
 .logo > img {
     height: 100%;
 }
 
-header button {
+.login {
     background-color: var(--color-primary);
     color: var(--color-background);
     cursor: pointer;
     width: 125px;
-    height: fit-content;
-    padding: 0.5rem;
-    margin: 5px auto;
-    border-radius: 4px;
+    line-height: 16px;
+    padding: 0.5em;
+    position: absolute;
+    right: 0;
+    border-radius: 3px;
 
     font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 /* Nav */
@@ -76,7 +71,7 @@ nav > *:hover {
     margin-top: 20px;
     padding: .5em;
     background: var(--color-search-bar);
-    border-radius: 2px;
+    border-radius: 3px;
     outline: none;
 }
 #search-bar::placeholder {
@@ -89,7 +84,7 @@ nav > *:hover {
     margin-top: 0;
     list-style: none;
     background: var(--color-background);
-    border-radius: 4px;
+    border-radius: 3px;
     overflow: hidden;
 }
 

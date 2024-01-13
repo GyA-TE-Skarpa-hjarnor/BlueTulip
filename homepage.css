@@ -11,8 +11,8 @@
     display: grid;
     width: var(--display-width);
     grid-template-columns: 3fr 1fr;
-    margin: 12px auto 4rem;
-    gap: 32px;
+    margin: 16px auto 4rem;
+    gap: 48px;
 }
 
 .news {
@@ -21,17 +21,16 @@
 }
 
 .news-list {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 12px;
+    margin-top: 16px;
 }
 
 .newsitem {
     position: relative;
     border-radius: 3px;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     min-height: fit-content;
     padding-bottom: 20px;
     overflow: hidden;
@@ -86,12 +85,9 @@ aside {
     display: inline-block;
 }
 
-.sticky{
+.forecasts{
     display: flex;
-    position: sticky;
-    bottom: 0;
     flex-direction: column;
-    width: 90%;
 }
 
 .forecast-header{
@@ -118,7 +114,7 @@ aside {
 }
 .forecast-container{
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 16px;
     box-shadow: var(--shadow);
     padding: 16px 16px 2.5px;
     border-radius: 3px;
