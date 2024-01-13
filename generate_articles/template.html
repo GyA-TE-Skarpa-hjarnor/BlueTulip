@@ -6,12 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$title</title>
     <link rel="stylesheet" href="/theme.css">
+    <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/nyhet/article.css">
     <script src="/theme-picker.js"></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <button id="toggle-theme" tabindex="-1"></button>
+    <header>
+        <div class="header">
+            <a class="logo" href="/">
+                <img src="/images/bluetulip.png" alt="Blue Tulip Nyheter logga">
+            </a>
+            <nav>
+                <a href="/">Nyheter</a>
+                <span onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})">Kontakt</span>
+                <a href="/om-oss">Om oss</a>
+            </nav>
+            <div class="search">
+                <input type="text" id="search-bar" placeholder="Sök...">
+                <ul id="search-results" aria-label="Sökresultat">
+
+                </ul>
+            </div>
+            <button class="login" type="button">Logga in</button>
+        </div>
+    </header>
     <article>
         <img src="$cover_src" alt="$cover_alt" id="cover-image">
         <h1 id="title">$title</h1>

@@ -62,7 +62,8 @@
     border-bottom: 2px solid var(--color-accent)
 }
 
-.newsitem:hover .newsitem-title {
+.newsitem:hover .newsitem-title,
+a:focus .newsitem-title {
     text-decoration: underline;
 }
 

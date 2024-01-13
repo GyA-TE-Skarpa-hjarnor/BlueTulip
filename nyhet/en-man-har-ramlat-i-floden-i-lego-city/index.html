@@ -7,10 +7,42 @@
         <title>
             En man har ramlat i floden i Lego City
         </title>
+        <link href="/theme.css" rel="stylesheet"/>
+        <link href="/header.css" rel="stylesheet"/>
         <link href="/nyhet/article.css" rel="stylesheet"/>
+        <script src="/theme-picker.js">
+        </script>
         <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
     </head>
     <body>
+        <button id="toggle-theme" tabindex="-1">
+        </button>
+        <header>
+            <div class="header">
+                <a class="logo" href="/">
+                    <img alt="Blue Tulip Nyheter logga" src="/images/bluetulip.png"/>
+                </a>
+                <nav>
+                    <a href="/">
+                        Nyheter
+                    </a>
+                    <span onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})">
+                        Kontakt
+                    </span>
+                    <a href="/om-oss">
+                        Om oss
+                    </a>
+                </nav>
+                <div class="search">
+                    <input id="search-bar" placeholder="Sök..." type="text"/>
+                    <ul aria-label="Sökresultat" id="search-results">
+                    </ul>
+                </div>
+                <button class="login" type="button">
+                    Logga in
+                </button>
+            </div>
+        </header>
         <article>
             <img alt="En man i floden i Lego city" id="cover-image" src="legocity.png"/>
             <h1 id="title">
