@@ -137,5 +137,5 @@ nav > *:hover {
 footer {
     height: 400px;
     overflow-x: hidden;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
 }

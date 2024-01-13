@@ -7,30 +7,31 @@
     padding: 0;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
+.columns {
+    display: grid;
     width: var(--display-width);
-    justify-content: left;
-    margin: auto;
+    grid-template-columns: 3fr 1fr;
+    margin: 12px auto 4rem;
+    gap: 32px;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
 }
 
 .news-list {
-    width: 75%;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: left;
-    margin: 0 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 12px;
 }
 
 .newsitem {
     position: relative;
     border-radius: 3px;
-    margin: 5px 0;
+    margin-bottom: 12px;
     min-height: fit-content;
     padding-bottom: 20px;
     overflow: hidden;
@@ -81,10 +82,8 @@ main {
 /*Forecast, date and name items on side*/
 aside {
     color: var(--color-text);
-    margin-top: 12px;
     position: relative;
     display: inline-block;
-    width: 25%;
 }
 
 .sticky{
@@ -95,16 +94,16 @@ aside {
     width: 90%;
 }
 
-.forecast-top{
+.forecast-header{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
 }
-.forecast-top > .left{
+.forecast-header > .left{
     flex-grow: 1;
 }
-.forecast-top > .right{
+.forecast-header > .right{
     display: flex;
     flex-direction: column;
     text-align: right;
