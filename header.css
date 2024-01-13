@@ -91,6 +91,9 @@ nav > *:hover {
     background: var(--color-background);
     border-radius: 4px;
     overflow: hidden;
+}
+
+#search-results[aria-hidden="false"] {
     box-shadow: var(--shadow);
 }
 

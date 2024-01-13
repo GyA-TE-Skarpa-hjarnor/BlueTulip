@@ -1,5 +1,6 @@
 const searchBar = document.getElementById('search-bar')
 const searchResults = document.getElementById('search-results')
+searchResults.ariaHidden = 'true'
 
 fetch('/generate_articles/articles.json')
 .then(res => res.json())
@@ -42,13 +43,14 @@ function registerFuse(list) {
     })
     document.body.addEventListener('click', e => {
         if (e.target != searchBar) {
-            searchResults.innerHTML = ''
+            hideSearchResults()
         }
     })
 }
 
 function renderResults(results) {
     searchResults.innerHTML = ''
+    searchResults.ariaHidden = (results.length == 0).toString()
     results.forEach(article => {
         const container = document.createElement('li')
         container.className = 'result-item'
@@ -82,4 +84,9 @@ function search(fuse) {
 function goToSearch() {
     const href = searchResults?.querySelector('a').href
     window.location.href = href
+}
+
+function hideSearchResults() {
+    searchResults.ariaHidden = 'true'
+    searchResults.innerHTML = ''
 }
