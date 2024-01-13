@@ -33,6 +33,7 @@
 body {
     font-family: 'Poppins';
     font-weight: 400;
+    color: var(--color-text);
     background-color: var(--color-background);
 }
 
@@ -87,7 +88,8 @@ body::-webkit-scrollbar-thumb{
 #toggle-theme {
     width: 10px;
     height: 10px;
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
     left: 0;
     top: 0;
     opacity: 0;
