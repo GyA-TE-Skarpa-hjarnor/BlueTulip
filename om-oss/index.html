@@ -6,22 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/theme-picker.js"></script>
     <link rel="stylesheet" href="/theme.css">
+    <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="om-oss.css">
-    <title>Om oss - Blue Tulip Nyheter</title>
+    <title>Om Blue Tulip</title>
 </head>
 <body>
     <button id="toggle-theme" tabindex="-1"></button>
+    <header>
+        <div class="header">
+            <a class="logo" href="/">
+                <img src="/images/bluetulip.png" alt="Blue Tulip Nyheter logga">
+            </a>
+            <nav>
+                <a href="/">Nyheter</a>
+                <span onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})">Kontakt</span>
+                <a href="/om-oss">Om oss</a>
+            </nav>
+            <div class="search">
+                <input type="text" id="search-bar" placeholder="Sök...">
+                <ul id="search-results" aria-label="Sökresultat">
 
+                </ul>
+            </div>
+            <button class="login" type="button">Logga in</button>
+        </div>
+    </header>
     <main>
-        Välkommen till Blue Tulip, din primära källa för svenska nyheter från hela landet! Vi på Blue Tulip är stolta över vår historia och det engagemang som har format oss till den nyhetsoutlet vi är idag.
-
-        Det hela började år 2008 i den pittoreska staden Småköping när vår grundare, Camilla Söderberg, kände behovet av att skapa en nyhetssida som skulle belysa och fira mångfalden och dynamiken i hela Sverige. Drivna av passion för journalistik och ett starkt samhällsengagemang, gav sig Camilla och hennes team i kast med att skapa Blue Tulip.
-
-        Namnet "Blue Tulip" valdes med omsorg. Tulpanen, symbolen för skönhet och förändring, representerar vår strävan efter att förmedla nyheter som är lika vackra som de är meningsfulla. Färgen blå, en symbol för förtroende och pålitlighet, återspeglar vårt åtagande att leverera pålitlig och aktuell information till våra läsare.
-
-        Under åren har Blue Tulip vuxit och utvecklats för att bli en respekterad röst inom nyhetsbranschen. Vi har omfamnat den digitala eran och strävar efter att vara i framkant när det gäller teknologi och journalistik. Vår dedikation till objektivitet, integritet och högkvalitativ rapportering har cementerat oss som en pålitlig källa för nyheter från alla hörn av Sverige.
-
-        Vi på Blue Tulip är stolta över våra rötter och ser fram emot att fortsätta vår resa med er, våra kära läsare. Tack för att ni väljer oss som er föredragna källa för svenska nyheter.
+        <p>
+            Välkommen till Blue Tulip, din primära källa för svenska nyheter från hela landet!
+            Vi på Blue Tulip är stolta över vår historia och passion som har format oss
+            till den nyhetssida vi är idag.
+        </p>
+        <p>
+            Ända sedan Blue Tulip grundades år 2008 har vårt team gjort sitt bästa för att
+            publicera relevanta nyheter som ger läsare insikt i sveriges händelser.
+            Camilla Söderberg, Blue Tulips grundare, växte upp fattigt i den lilla staden
+            Småköping, Blekinge kände behovet av att skapa en nyhetssida som skulle belysa och
+            fira mångfalden och dynamiken i hela Sverige. Drivna av passion för journalistik
+            och ett starkt samhällsengagemang, gav sig Camilla och hennes team i kast med att
+            skapa Blue Tulip.
+        </p>
+        <p>
+            Namnet "Blue Tulip" valdes med omsorg. Tulpanen, symbolen för skönhet och förändring,
+            representerar vår strävan efter att förmedla nyheter som är lika vackra som de är
+            meningsfulla. Färgen blå, en symbol för förtroende och pålitlighet, återspeglar vårt
+            åtagande att leverera pålitlig och aktuell information till våra läsare.
+        </p>
+        <p>
+            Under åren har Blue Tulip vuxit och utvecklats för att bli en respekterad röst inom
+            nyhetsbranschen. Vi har omfamnat den digitala eran och strävar efter att vara i framkant
+            när det gäller teknologi och journalistik. Vår dedikation till objektivitet, integritet
+            och högkvalitativ rapportering har cementerat oss som en pålitlig källa för nyheter
+            från Sveriges alla hörn.
+        </p>
+        <p>
+            Vi på Blue Tulip är stolta över våra rötter och ser fram emot att fortsätta vår resa med er, våra kära läsare. Tack för att ni väljer oss som er föredragna källa för svenska nyheter.
+        </p>
     </main>
 </body>
 </html>
