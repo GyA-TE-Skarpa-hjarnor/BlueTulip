@@ -1,8 +1,49 @@
 main {
-    width: var(--display-width);
-    margin: auto;
+    width: 600px;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadow);
+    padding: 2rem 3rem;
+}
+
+h2 {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+p:first-of-type {
+    font-weight: 600;
 }
 
 p {
     margin-bottom: 1em;
+    text-align: justify;
+}
+
+img {
+    border-radius: 3px;
+}
+
+.cover {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 1rem;
+}
+
+.left {
+    width: 250px;
+    float: left;
+    margin-right: 1rem;
+    margin-top: 6px;
+}
+
+.right {
+    width: 250px;
+    float: right;
+    margin-left: 1rem;
+    margin-top: 6px;
 }
