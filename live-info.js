@@ -23,6 +23,9 @@ fetch(url)
         }
         namnsdag.innerHTML = `Dagens namn: ${nameString}`
     })
+    .catch(() => {
+        namnsdag.remove()
+    })
 
 Array.from(Array.from(document.getElementsByClassName('forecast-date')).entries()).forEach(([i, element]) => {
     const date = new Date()
