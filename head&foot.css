@@ -138,13 +138,14 @@ footer {
 
 .footer-grid{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
 }
 
 .footer-nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
@@ -154,7 +155,7 @@ footer {
 
 .copyright,
 .powered-by {
-    font-size: 0.9rem;
+    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -169,6 +170,10 @@ footer {
 
 .news-tip-form label {
     margin-top: 10px;
+}
+
+.news-tip-form input{
+    background-color: var(--color-search-bar);
 }
 
 .news-tip-form input,
@@ -187,4 +192,25 @@ footer {
 
 .news-tip-form button:hover {
     background-color: #4a6884;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.socials-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.socials-icons img:hover {
+    opacity: 0.8;
 }
