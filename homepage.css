@@ -32,7 +32,6 @@
     border-radius: 3px;
     margin-bottom: 24px;
     min-height: fit-content;
-    padding-bottom: 20px;
     overflow: hidden;
     box-shadow: var(--shadow);
 }
@@ -68,7 +67,7 @@ a:focus .newsitem-title {
 }
 
 .newsitem-paragraph {
-    margin: 0 20px;
+    margin: 0 20px 20px;
     padding-bottom: 20px;
 }
 

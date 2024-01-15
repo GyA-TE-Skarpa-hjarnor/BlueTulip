@@ -2,7 +2,7 @@ article {
     display: flex;
     width: 70%;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 32px auto;
     padding: 20px;
     background-color: var(--color-background);
     box-shadow: var(--shadow);

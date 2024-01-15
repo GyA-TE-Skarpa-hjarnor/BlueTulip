@@ -21,7 +21,7 @@ Array.from(newsitems).forEach(item => {
                 const cover = doc.getElementById('cover-image')
                 const coverSrc = url + '/' + cover?.getAttribute('src')
                 const coverAlt = cover?.getAttribute('alt')
-                const paragraph = titleEl?.nextElementSibling?.innerHTML.trim()
+                const paragraph = doc.getElementsByTagName('p')[0].innerHTML.trim()
 
                 const timeEl = doc.querySelector('time.published-time')
                 const date = new Date(timeEl.dateTime)
