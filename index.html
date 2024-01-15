@@ -145,45 +145,54 @@
     <footer>
         <div class="footer-grid">
             <div class="left-grid">
-                <h3>Kontakta oss</h3>
+                <h3 class="footer-grid-title">Kontakta oss</h3>
+                <!-- Copyright -->
+                <span class="copyright">&copy; BlueTulip AB 2024</span>
+                <br>
+                <span>Gustavsvägen 17, 456 78 Småköping</span>
+
+                <div class="disclaimer">
+                    <p>This website is for informational purposes only. Please read our <a href="/privacy-policy">Privacy Policy</a> for more information.</p>
+                </div>
+                <br>
+                <span class="powered-by">Powered by ChatGPT 3.5</span>
+
                 <!--Nav from header-->
                 <nav class="footer-nav">
                     <a href="/">Nyheter</a>
                     <a href="/om-oss">Om oss</a>
                 </nav>
 
-                <!-- Copyright -->
-                <span class="copyright">&copy; BlueTulip AB 2024</span>
-                <span>Gustavsvägen 17, 456 78 Småköping</span>
-
-                <div class="disclaimer">
-                    <p>This website is for informational purposes only. Please read our <a href="/privacy-policy">Privacy Policy</a> for more information.</p>
-                </div>
-                <span class="powered-by">Powered by ChatGPT 3.5</span>
             </div>
 
             <div class="center-grid">
                 <!-- Socials Section -->
                 <div class="socials">
-                    <h3 class="socials-title">Följ Oss</h3>
+                    <h3 class="footer-grid-title">Följ Oss</h3>
                     <div class="socials-icons">
-                        <img src="./svgs/icons8-facebook.svg" alt="facebook icon" style="filter: invert(1);">
-                        <img src="./svgs/icons8-twitter.svg" alt="twitter icon" style="filter: invert(1);">
+                        <div class="icon">
+                            <img src="./svgs/icons8-facebook.svg" alt="facebook icon" style="filter: invert(1);">
+                            <a href="">@BlueTulipPaper</a>
+                        </div>
+                        <div class="icon">
+                            <img src="./svgs/icons8-twitter.svg" alt="twitter icon" style="filter: invert(1);">
+                            <a href="">@BlueTulipPaper</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="right-grid">
-                <h3 class="tipps">Tippsa Oss</h3>
+                <h3 class="footer-grid-title">Tippsa Oss</h3>
                 <!-- Form for sending news tips -->
                 <form class="news-tip-form">
                     <label for="name">Ditt Namn:</label>
                     <input type="text" id="name" name="name" required>
                     <label for="mail">Din Mailadress:</label>
                     <input type="email" id="mail" name="mail" required>
-                    <label for="topic">Tipp eller nyhet:</label>
+                    <label for="topic">Kort om Tipp eller Nyhet:</label>
                     <input type="text" id="topic" name="topic" required>
-                    <button type="submit">Submit</button>
+                    <button type="submit">Skicka</button>
                 </form>
             </div>
         </div>

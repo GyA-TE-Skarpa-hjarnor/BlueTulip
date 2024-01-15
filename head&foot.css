@@ -139,22 +139,32 @@ nav > *:hover {
 
 /* Footer */
 footer {
+    display: flex;
+    justify-content: center;
     background-color: var(--color-primary);
     color: white;
     padding: 20px;
 }
 
 .footer-grid{
+    width: var(--display-width);
     display: grid;
     grid-template-columns: 33% 33% 33%;
     gap: 20px;
 }
 
+.footer-grid-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--color-secondary);
+    color: var(--color-text);
+}
+
 .footer-nav a {
-    color: white;
     text-decoration: none;
     font-size: 20px;
     transition: color 0.3s ease;
+    color: var(--color-secondary);
 }
 
 .footer-nav a:hover {
@@ -163,12 +173,13 @@ footer {
 
 .copyright,
 .powered-by {
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 10px;
 }
 
 .disclaimer {
     margin-top: 20px;
+    
 }
 
 .news-tip-form {
@@ -178,6 +189,7 @@ footer {
 
 .news-tip-form label {
     margin-top: 10px;
+    color: var(--color-text);
 }
 
 .news-tip-form input{
@@ -191,7 +203,7 @@ footer {
 }
 
 .news-tip-form button {
-    background-color: var(--color-accent);
+    background-color: var(--color-secondary);
     color: white;
     border: none;
     cursor: pointer;
@@ -199,7 +211,7 @@ footer {
 }
 
 .news-tip-form button:hover {
-    background-color: #4a6884;
+    background-color: var(--color-accent);
 }
 
 .socials {
@@ -209,7 +221,17 @@ footer {
 
 .socials-icons {
     display: flex;
+    flex-direction: column;
     gap: 10px;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.icon > a{
+    color: var(--color-text);
 }
 
 .socials-icons img {
@@ -217,6 +239,10 @@ footer {
     height: 30px;
     cursor: pointer;
     transition: opacity 0.3s ease;
+}
+
+.socials-icons a{
+    text-decoration: none;
 }
 
 .socials-icons img:hover {
