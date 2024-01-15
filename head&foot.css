@@ -79,13 +79,16 @@ nav > *:hover {
 }
 
 #search-results {
-    width: 380px;
+    width: 450px;
     padding-left: 0;
     margin-top: 0;
+    margin-left: -4.5rem;
     list-style: none;
-    background: var(--color-background);
+    background: var(--color-secondary);
     border-radius: 3px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 #search-results[aria-hidden="false"] {
@@ -93,38 +96,43 @@ nav > *:hover {
 }
 
 .result-item {
-    overflow: hidden;
-    height: 5rem;
-    width: 300px;
+    background-color: var(--color-background);
+    height: 3.5rem;
+    border-radius: 2px;
 }
 
 .result-item > a {
-    margin: 0;
+    width: 100%;
     height: 100%;
+    margin: 0;
     padding: 0;
-    display: flex;
-    justify-items: center;
-    text-decoration: none;
     position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .result-item > a:hover,
 .result-item > a:focus {
-    opacity: 0.5;
+    outline: 2px solid var(--color-primary);
 }
 
 .result-cover {
-    height: 100%;
-    width: 6rem;
+    height: 3rem;
+    width: 4rem;
     object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
+    margin-left: 4px;
 }
 
 .result-title {
+    font-size: 14px;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: clip;
     display: -webkit-box;
-    line-clamp: 2;
-    margin: 0.2rem 0.5rem 0.6rem;
+    line-height: 1.2em;
+    margin-left: 0.5rem;
     color: var(--color-text);
 }
 
