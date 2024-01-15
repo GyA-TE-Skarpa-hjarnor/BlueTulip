@@ -31,6 +31,7 @@
 }
 
 body {
+    transition: .2s ease;
     font-family: 'Poppins';
     font-weight: 400;
     color: var(--color-text);
@@ -82,15 +83,4 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background-color: var(--color-primary);
     border-radius: 1px;
-}
-
-/* Theme changer button */
-#toggle-theme {
-    width: 10px;
-    height: 10px;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    opacity: 0;
 }

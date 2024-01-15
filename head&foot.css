@@ -128,9 +128,63 @@ nav > *:hover {
     color: var(--color-text);
 }
 
+
 /* Footer */
 footer {
-    height: 400px;
-    overflow-x: hidden;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
+    color: white;
+    padding: 20px;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--color-accent);
+}
+
+.copyright,
+.powered-by {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.disclaimer {
+    margin-top: 20px;
+}
+
+.news-tip-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-tip-form label {
+    margin-top: 10px;
+}
+
+.news-tip-form input,
+.news-tip-form button {
+    margin-top: 5px;
+    padding: 8px;
+}
+
+.news-tip-form button {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.news-tip-form button:hover {
+    background-color: #4a6884;
 }

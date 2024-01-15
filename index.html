@@ -7,7 +7,7 @@
     <title>Blue Tulip Nyheter</title>
     <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="head&foot.css">
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
     <script src="theme-picker.js"></script>
     <script defer src="search.js"></script>
@@ -15,7 +15,6 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <button id="toggle-theme" tabindex="-1"></button>
     <header>
         <div class="header">
             <a class="logo" href="/">
@@ -139,9 +138,42 @@
             </div>
         </aside>
     </div>
+    <button id="toggle-theme" tabindex="-1">
+        <img src="./svgs/110831_moon_icon.svg" alt="dark mode moon icon" class="theme-icon light">
+        <img src="./svgs/110805_sun_icon.svg" alt="light mode sun icon" class="theme-icon dark">
+    </button>
     <footer>
-        <span class="copyright">© BlueTulip AB 2024</span>
-        <span>Gustavsvägen 17, 456 78 Småköping</span>
+        <div class="footer-grid">
+            <div class="left-grid">
+                <!--Nav from header-->
+                <nav class="footer-nav">
+                    <a href="/">Nyheter</a>
+                    <a href="/om-oss">Om oss</a>
+                </nav>
+
+                <!-- Copyright -->
+                <span class="copyright">&copy; BlueTulip AB 2024</span>
+                <span>Gustavsvägen 17, 456 78 Småköping</span>
+
+                <div class="disclaimer">
+                    <p>This website is for informational purposes only. Please read our <a href="/privacy-policy">Privacy Policy</a> for more information.</p>
+                </div>
+                <span class="powered-by">Powered by ChatGPT 3.5</span>
+            </div>
+            <div class="right-grid">
+                <!-- Form for sending news tips -->
+                <form class="news-tip-form">
+                    <label for="name">Ditt Namn:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="mail">Din Mailadress:</label>
+                    <input type="email" id="mail" name="mail" required>
+                    <label for="topic">Tipp eller nyhet:</label>
+                    <input type="text" id="topic" name="topic" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
