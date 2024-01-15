@@ -1,12 +1,25 @@
 article {
     display: flex;
-    width: 70%;
+    width: var(--display-width);
     flex-direction: column;
     margin: 32px auto;
     padding: 20px;
     background-color: var(--color-background);
     box-shadow: var(--shadow);
     border-radius: 3px;
+}
+
+#title {
+    color: var(--color-primary);
+    font-size: 200%;
+    margin-top: 10px 0 0;
+}
+
+.published {
+    font-family: "Poppins";
+    font-size: 14px;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid var(--color-secondary);
 }
 
 #cover-image {
@@ -16,29 +29,14 @@ article {
     object-fit: cover;
 }
 
-#title {
-    color: var(--color-primary);
-    font-size: 200%;
-    margin: 10px 0;
-    padding-bottom: .5rem;
-    border-bottom: 2px solid var(--color-accent);
-}
-
 article p {
     margin: 10px 0;
     line-height: 1.6;
 }
 
-.published,
-.author {
+.author{
     font-family: "Poppins";
     font-size: 14px;
-    margin-top: 20px;
-}
-.author{
     font-style: italic;
-}
-
-.published-time {
-    font-weight: bold;
+    margin-top: 20px;
 }
