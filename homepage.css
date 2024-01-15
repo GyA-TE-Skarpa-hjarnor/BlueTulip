@@ -85,21 +85,21 @@ aside {
     display: inline-block;
 }
 
-.forecasts{
+.forecasts {
     display: flex;
     flex-direction: column;
 }
 
-.forecast-header{
+.forecast-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
 }
-.forecast-header > .left{
+.forecast-header > .left {
     flex-grow: 1;
 }
-.forecast-header > .right{
+.forecast-header > .right {
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -109,20 +109,20 @@ aside {
     align-items: flex-end;
 }
 
-.forecast-title{
+.forecast-title {
     font-family: "Noto Serif";
 }
-.forecast-container{
+.forecast-container {
     display: inline-block;
     margin-top: 16px;
     box-shadow: var(--shadow);
     padding: 16px 16px 2.5px;
     border-radius: 3px;
 }
-.forecast-date{
+.forecast-date {
     font-weight: 600;
 }
-.forecast-info{
+.forecast-info {
     display: flex;
     align-items: center;
     border-bottom: 1px solid var(--color-accent);
@@ -130,16 +130,16 @@ aside {
     text-align: center;
     font-family: "Poppins";
 }
-.forecast-info > time{
+.forecast-info > time {
     display: inline;
     width: 33%;
     font-weight: 400;
     font-size: 15px;
 }
-.forecast-info > div{
+.forecast-info > div {
     width: 33%;
 }
-.forecast-info img{
+.forecast-info img {
     display: inline-block;
     width: 80%;
     aspect-ratio: 1;
@@ -147,22 +147,22 @@ aside {
 :root[data-theme="dark"] .forecast-info img {
     filter: brightness(10);
 }
-.forecast-info > span{
+.forecast-info > span {
     width: 33%;
     font-weight: 700;
     font-size: 25px;
 }
 
-.forecast-grid{
+.forecast-grid {
     margin: 4px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.forecast-grid > dt{
+.forecast-grid > dt {
     padding-bottom: 2px;
     float: left;
 }
-.forecast-grid > dd{
+.forecast-grid > dd {
     padding-bottom: 2px;
     text-align: right;
     font-weight: 600;

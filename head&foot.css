@@ -142,22 +142,23 @@ footer {
     display: flex;
     justify-content: center;
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-text-inverted);
     padding: 20px;
 }
 
-.footer-grid{
+.footer-grid {
     width: var(--display-width);
     display: grid;
     grid-template-columns: 33% 33% 33%;
     gap: 20px;
 }
 
-.footer-grid-title{
+.footer-grid-title {
     font-size: 25px;
     margin-bottom: 10px;
+    padding-bottom: 6px;
     border-bottom: 1px solid var(--color-secondary);
-    color: var(--color-text);
+    color: var(--color-text-inverted);
 }
 
 .footer-nav a {
@@ -171,7 +172,10 @@ footer {
     color: var(--color-accent);
 }
 
-.copyright,
+.left-grid span {
+    display: block;
+}
+
 .powered-by {
     font-size: 15px;
     margin-top: 10px;
@@ -179,7 +183,12 @@ footer {
 
 .disclaimer {
     margin-top: 20px;
-    
+}
+
+.disclaimer a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--color-text-inverted)
 }
 
 .news-tip-form {
@@ -187,31 +196,53 @@ footer {
     flex-direction: column;
 }
 
-.news-tip-form label {
-    margin-top: 10px;
-    color: var(--color-text);
+.news-tip-form span {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 8px;
 }
 
-.news-tip-form input{
-    background-color: var(--color-search-bar);
+.news-tip-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-tip-form label {
+    margin-top: 10px;
+    display: block;
+    color: var(--color-text-inverted);
 }
 
 .news-tip-form input,
-.news-tip-form button {
+.news-tip-form textarea {
+    display: block;
+    color: var(--color-text);
+    background-color: var(--color-search-bar);
+    font-family: 'Poppins';
+}
+
+.news-tip-form input::placeholder {
+    font-style: italic;
+}
+
+.news-tip-form input,
+.news-tip-form button,
+.news-tip-form textarea {
     margin-top: 5px;
     padding: 8px;
+    border-radius: 2px;
 }
 
 .news-tip-form button {
     background-color: var(--color-secondary);
-    color: white;
+    color: var(--color-text);
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .news-tip-form button:hover {
-    background-color: var(--color-accent);
+    filter: brightness(0.8);
 }
 
 .socials {
@@ -225,13 +256,17 @@ footer {
     gap: 10px;
 }
 
-.icon{
+.socials-icons a {
+    cursor: pointer;
+}
+
+.icon {
     display: flex;
     flex-direction: row;
     gap: 5px;
 }
-.icon > a{
-    color: var(--color-text);
+.icon > a {
+    color: var(--color-text-inverted);
 }
 
 .socials-icons img {
@@ -241,10 +276,14 @@ footer {
     transition: opacity 0.3s ease;
 }
 
-.socials-icons a{
+:root[data-theme="light"] .socials-icons img {
+    filter: invert(1);
+}
+
+.socials-icons a {
     text-decoration: none;
 }
 
-.socials-icons img:hover {
+.socials-icons .icon:hover img {
     opacity: 0.8;
 }

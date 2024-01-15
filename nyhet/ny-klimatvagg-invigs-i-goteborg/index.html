@@ -12,6 +12,8 @@
         <link href="/nyhet/article.css" rel="stylesheet"/>
         <script src="/theme-picker.js">
         </script>
+        <script defer="" src="/footer.js">
+        </script>
         <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
     </head>
     <body>
@@ -78,5 +80,112 @@
             <img alt="dark mode moon icon" class="theme-icon light" src="/svgs/110831_moon_icon.svg"/>
             <img alt="light mode sun icon" class="theme-icon dark" src="/svgs/110805_sun_icon.svg"/>
         </button>
+        <footer>
+            <div class="footer-grid">
+                <div class="left-grid">
+                    <h3 class="footer-grid-title">
+                        Om oss
+                    </h3>
+                    <!-- Copyright -->
+                    <span class="copyright">
+                        © BlueTulip AB 2024
+                    </span>
+                    <span>
+                        Gustavsvägen 17, 456 78 Småköping
+                    </span>
+                    <span>
+                        Organisationsnummer: 556046-9206
+                    </span>
+                    <span>
+                        Vd och ansvarig utgivare: Camilla Söderberg
+                    </span>
+                    <div class="disclaimer">
+                        <p>
+                            This website is for informational purposes only. Please read our
+                            <a>
+                                Privacy Policy
+                            </a>
+                            for more information.
+                        </p>
+                    </div>
+                    <br/>
+                    <span class="powered-by">
+                        Powered by ChatGPT 3.5
+                    </span>
+                    <!--Nav from header-->
+                    <nav class="footer-nav">
+                        <a href="/">
+                            Nyheter
+                        </a>
+                        <a href="/om-oss">
+                            Om oss
+                        </a>
+                    </nav>
+                </div>
+                <div class="center-grid">
+                    <!-- Socials Section -->
+                    <div class="socials">
+                        <h3 class="footer-grid-title">
+                            Följ oss
+                        </h3>
+                        <div class="socials-icons">
+                            <div class="icon">
+                                <img alt="Facebook icon" src="/svgs/icons8-facebook.svg"/>
+                                <a>
+                                    BlueTulipNyheter
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <img alt="Twitter icon" src="/svgs/icons8-twitter.svg"/>
+                                <a>
+                                    @BlueTulipPaper
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <img alt="Instagram icon" src="/svgs/icons8-instagram.svg"/>
+                                <a>
+                                    @BlueTulipInsta
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <img alt="Youtube shorts icon" src="/svgs/icons8-youtube-shorts.svg"/>
+                                <a>
+                                    @BlueTulipShorts
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-grid">
+                    <h3 class="footer-grid-title">
+                        Kontakta oss
+                    </h3>
+                    <!-- Form for sending news tips -->
+                    <form class="news-tip-form" id="news-tip-form">
+                        <span>
+                            <div>
+                                <label for="name">
+                                    Namn
+                                </label>
+                                <input id="name" name="name" placeholder="Ditt namn..." required="" type="text"/>
+                            </div>
+                            <div>
+                                <label for="mail">
+                                    Mejladdress
+                                </label>
+                                <input id="mail" name="mail" placeholder="epost@exempel.se" required="" type="email"/>
+                            </div>
+                        </span>
+                        <label for="topic">
+                            Meddelande
+                        </label>
+                        <textarea id="topic" name="topic" required="" rows="5" type="text"></textarea>
+                        <button type="submit">
+                            Skicka
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
